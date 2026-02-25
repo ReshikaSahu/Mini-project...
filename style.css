@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    background: #f8f8f8;
+}
+header{
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+}
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+}
+/* N avbar hover effect*/
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background: gold;
+    transition: 0.3s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: #fff;
+}
+.hero-text{
+    max-width: 50%;
+}
+.hero-text h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+.hero-text button{
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+
+}
+/*button hover*/
+.hero-text button:hover{
+    background: gold;
+    color: black;
+    transform: scale(1.05);
+}
+/*hero image hover*/
+.hero-img img{
+    width: 300px;
+}
+.hero-img img:hover{
+    transform: scale(1.1)rotate(3deg);
+}
+/*categories*/
+.Categories{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: #f3f3f3;
+}
+.cat-box{
+    text-align: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+/*category hover card effect*/
+.cat-box:hover{
+    background:white;
+    box-shadow: 0px 10px 25px
+    rgba(0,0,0,0.15);
+    transform: translateY(-10px);
+}
+/*offer*/
+.offers{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+}
+.offer-box{
+    background-color: #f5e1d8;
+    padding: 30px;
+    width: 40%;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+/*offer hover effect*/
+.offer-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 15px 30pxrgba(0,0,0,0.2);
+}
+.offer-box button{
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.offer-box button:hover{
+    background: gold;
+    color: black;
+}
+/*product*/
+.products{
+    padding: 50px;
+    text-align: center;
+}
+.product-grid{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.product{
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/*product hover effect*/
+.product:hover{
+    transform: translate(-10px);
+    box-shadow: 0px 15px 30px
+    rgba(0,0,0,0.15);
+}
+.product img{
+    width: 100%;
+}
+.product img:hover{
+    transform: scale(1.1);
+}
